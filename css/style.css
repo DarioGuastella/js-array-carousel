@@ -24,7 +24,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* display: none; */
+    display: none;
 }
 #wrapper img.displayed {
     display: block;

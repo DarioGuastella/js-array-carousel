@@ -6,9 +6,13 @@ imagesPath = [
     "./img/05.webp"
 ]
 
-let images = "";
+let imagesToAdd = "";
 for (let i = 0; i < imagesPath.length; i++) {
     const singleImagePath = imagesPath[i];
-    images += `<img src="${singleImagePath}">`;
+    imagesToAdd += `<img src="${singleImagePath}">`;
 }
-document.getElementById("wrapper").innerHTML = images;
+document.getElementById("wrapper").innerHTML = imagesToAdd;
+
+let currentImg = 0;
+const images = document.querySelectorAll("#wrapper img");
+images[currentImg].classList.add("displayed");

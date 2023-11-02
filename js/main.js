@@ -1,2 +1,5 @@
-const imagesPath = ["img/01.webp"];
-document.getElementById("wrapper").innerHTML = imagesPath;
+const container = document.getElementById("wrapper");
+const newImg = document.createElement("img");
+newImg.src = "./img/01.webp" ;
+newImg.classList.add("displayed");
+container.append(newImg);

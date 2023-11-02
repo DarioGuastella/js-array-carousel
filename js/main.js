@@ -30,7 +30,7 @@ document.getElementById("arrowUp").addEventListener("click", function () {
         images[currentImg].classList.remove("displayed");
         currentImg++;
         images[currentImg].classList.add("displayed");
-    } else if (currentImg == 4) {
+    } else if (currentImg == images.length - 1) {
         images[currentImg].classList.remove("displayed");
         currentImg = 0;
         images[currentImg].classList.add("displayed");
@@ -46,7 +46,7 @@ document.getElementById("arrowDown").addEventListener("click", function () {
         images[currentImg].classList.add("displayed");
     } else if (currentImg == 0) {
         images[currentImg].classList.remove("displayed");
-        currentImg = 4;
+        currentImg = images.length - 1;
         images[currentImg].classList.add("displayed");
     }
 });

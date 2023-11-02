@@ -26,7 +26,7 @@ images[currentImg].classList.add("displayed"); //all'immagine che ha index 0 (va
 // Pulsante SU
 
 document.getElementById("arrowUp").addEventListener("click", function () {
-    if (currentImg < images.length - 1) {                   //Partendo da zero, l'ultima immagine avrà valore 4 anche se l'array avrà 5 valori, quindi alla lunghezza di quest'ultimo si sottrae 1. Non si mette direttamente 4 perchè se si aggiungono immagini si spacca tutto
+    if (currentImg < images.length - 1) {                   //Partendo da zero, l'ultima immagine avrà valore 4 anche se l'array avrà lunghezza 5, quindi alla lunghezza di quest'ultimo si sottrae 1. Non si mette direttamente 4 perchè se si aggiungono immagini si spacca tutto
         images[currentImg].classList.remove("displayed");       //si toglie il display block al valore corrente (0 quindi prima foto)
         currentImg++;                                           //si incrementa di 1 il valore
         images[currentImg].classList.add("displayed");             //si aggiunge il display block al nuovo valore (1 in questo caso, seconda foto)

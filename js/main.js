@@ -1,5 +1,14 @@
-const container = document.getElementById("wrapper");
-const newImg = document.createElement("img");
-newImg.src = "./img/01.webp" ;
-newImg.classList.add("displayed");
-container.append(newImg);
+imagesPath = [
+    "./img/01.webp",
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp"
+]
+
+let images = "";
+for (let i = 0; i < imagesPath.length; i++) {
+    const singleImagePath = imagesPath[i];
+    images += `<img src="${singleImagePath}">`;
+}
+document.getElementById("wrapper").innerHTML = images;
